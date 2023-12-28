@@ -1,7 +1,7 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 
-import { HomeContainer, WorkFlowContainer, WorkFlowListContainer, SplashScreen } from "../screens";
+import { HomeContainer, WorkFlowContainer, SplashScreen } from "../screens";
 import { colors } from "./theme";
 
 const Stack = createStackNavigator();
@@ -32,21 +32,6 @@ const Auth = () => {
             fontWeight: '600',
             color: colors.blackColor,
             marginLeft: 85,
-            textTransform: 'uppercase'
-          },
-        }}
-      />
-      <Stack.Screen
-        name="workFlowList"
-        component={WorkFlowListContainer}
-        options={{
-          headerShown: true,
-          headerTitleStyle: {
-            fontSize: 20,
-            lineHeight: 24,
-            fontWeight: '600',
-            color: colors.blackColor,
-            marginLeft: 55,
             textTransform: 'uppercase'
           },
         }}
